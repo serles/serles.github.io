@@ -35,6 +35,5 @@ $('.weather-config input').onkeyup = (e) => {
     localStorage.todo = '[]';
 })();
 
-new Todo().display;
 new Weather(place).getWeather;
 new Powerline();

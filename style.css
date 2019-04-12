@@ -1,0 +1,130 @@
+html{font-family: 'Montserrat', monospace;}
+
+a{text-decoration: none;}
+
+body{margin: 0px;}
+
+.cuadro{
+    height:150px;
+    width: 600px;
+    margin: 10px auto;
+    position: relative;
+    top: 50px;
+    box-shadow: 2px 2px 5px #000 !important;
+}
+
+video{
+    width: 600px;
+    height: 150px;
+    position: relative;
+    top: -1px;
+}
+
+#welcome{text-align: center;}
+
+#welcome a{
+    font-size: 44px;
+    position: relative;
+    top: 0px;
+}
+
+#links{height: 90px;}
+
+.linksdiv{
+    width: 200px !important;
+    height: 85px !important;
+}
+
+#grupo1{
+    position: absolute;
+    top: 2px;
+    left: 0px;
+}
+
+#grupo2{
+    position: absolute;
+    top: 2px;
+    left: 200px;
+}
+
+#grupo3{
+    position: absolute;
+    top: 2px;
+    left: 400px;
+}
+
+.links{
+    display: block;
+    text-align: center;
+    transition: .3s;
+    position: relative;
+    top: 5px;
+}
+
+span{font-weight: bolder}
+
+#welcome{height: 65px !important;}
+
+#foto{
+    height: 148px !important;
+    background-position: 370px -50px;
+    background-repeat: no-repeat;
+}
+
+footer div#liveClock {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	color: var(--base-txt);
+	-moz-user-select: none;
+	-ms-user-select: none;
+	transition: .4s color;
+	letter-spacing: 15px;
+	user-select: none;
+	font-size: 100px;
+	position: fixed;
+	cursor: default;
+	z-index: 6;
+	bottom: 5%;
+	right: 5%;
+}
+
+footer div#liveClock span {
+	animation: tictac 3s linear infinite;
+	position: relative;
+	top: -10px;
+}
+
+footer form input[type="text"] {
+	transition: .3s border-color, .3s background-color, .3s border-bottom;
+	background-color: var(--background);
+	border-color: var(--base-txt);
+	border: 0;
+	/*   rip ramp   */
+	border-bottom: 5px solid;
+	color: var(--base-txt);
+	font-size: 70px;
+	position: fixed;
+	display: block;
+	outline: none;
+	padding: 10px;
+	z-index: 4;
+	bottom: 5%;
+	width: 90%;
+	left: 4%;
+}
+
+footer form input[type="text"]:focus {
+	background-color: var(--background-alt);
+	border-bottom: 10px solid #60B48A;
+	color: #60B48A;
+	outline: none;
+}
+
+footer form input[type="text"]:focus::-webkit-input-placeholder {
+	opacity: 0;
+}
+
+footer form input[type="text"]:focus::-moz-placeholder {
+	opacity: 0;
+}

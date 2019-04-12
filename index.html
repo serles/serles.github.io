@@ -1,77 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="https://github.com/0-l">
-        <link rel="stylesheet" type="text/css" href="css/awoo.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200|Roboto:100,400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <title>~</title>
+<head>
+	<title>x11</title>
+      
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="colors.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="icon" href="./src/favicon.png" type="image/png" sizes="128x128">
 </head>
+    
 <body>
-    <div id="search">
-        <div>
-            <input type="text" spellcheck="false" placeholder="search">
-            <button class="close"><i class="material-icons">&#xE5CD;</i></button>
-            <ul class="search-engines"></ul>
+    <div class="cuadro" id="welcome">
+        <a>Welcome back</a>
+    </div>
+    <div class="cuadro" id="foto">
+        
+        <video autoplay loop src="src/kfc.mp4"></video>
+        
+    </div>
+    <div class="cuadro" id="links">
+        <div class="linksdiv" id="grupo1">
+            <a class="links" href="https://www.youtube.com/feed/subscriptions" id="youtube">Youtube</a>
+            <a class="links" href="http://www.deviantart.com/browse/all/?columns=2" id="devianart">Deviantart</a>
+            <a class="links" href="https://www.tumblr.com/dashboard" id="tumblr">Tumblr</a>
+            <a class="links" id="chan" href="http://4chan.org">4chan</a>
+        </div>
+        <div class="linksdiv" id="grupo2">
+            <a class="links" id="animeflv" href="http://animeflv.me/">Animeflv.me</a>
+            <a class="links" id="kissmanga" href="http://kissmanga.com/MangaList">Kissmanga</a>
+            <a class="links" id="myanimelist" href="https://myanimelist.net/">MyAnimeList</a>
+            <a class="links" id="nyaa" href="https://www.nyaa.se/">nyaa.se</a>
+        </div>
+        <div class="linksdiv" id="grupo3">
+            <a class="links" id="animew" href="http://boards.4chan.org/w/">Anime walls</a>
+            <a class="links" id="wgeneral" href="http://boards.4chan.org/wg/">Wallpapers</a>
+            <a class="links" id="anime" href="http://boards.4chan.org/a/">Anime</a>
+            <a class="links" id="technology" href="http://boards.4chan.org/g/">Technology</a>
         </div>
     </div>
-    <div id="links" class="-">
-        <div id="tabs" class="!-">
-            <cols>
-                <ul class="- indicator">
-                    <li active></li>
-                </ul>
-                <div class="+ widgets col-end">
-                    <p class="time">00<span>:00</span></p>
-                    <div class="!+ + weather-config">
-                        <input name="color" type="text" placeholder="location">
-                    </div>
-                    <div class="+ weather">
-                        <button class="!+ edit">edit</button>
-                        <p temperature>4ºC</p>
-                        <p weather class="+">
-                            <i class="material-icons" sunny>wb_sunny</i>
-                        </p>
-                    </div>
-                </div>
-            </cols>
-        </div>
-        <div id="panels">
-            <ul class="start" active>
-                <div class="links">
-                    <li>
-                        <h1>entertainment</h1>
-                        <a href="https:twitch.tv">twitch</a>
-                        <a href="https:youtube.com">youtube</a>
-                        <a href="https:pr0gramm.com">pr0gramm</a>
-                    </li>
-                    <li>
-                        <h1>news</h1>
-                        <a href="https://derstandard.at">derstandard</a>
-                        <a href="https://orf.at">orf</a>
-                    </li>
-                    <li>
-                        <h1>Technology</h1>
-                        <a href="https://outlook.live.com/owa/">mail</a>
-                    </li>
-                </div>
-            </ul>
-            <ul class="music">
-                <div class="links">
-                </div>
-            </ul>
-            <ul class="tech">
-                <div class="links">
-                </div>
-            </ul>
-        </div>
-    </div>
-    <script type="text/javascript" src="js/strftime.js"></script>
-    <script type="text/javascript" src="js/weather.js"></script>
-    <script type="text/javascript" src="js/powerline.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/search.js"></script>
+	
+	<footer>
+
+		<form action="https://google.com/search" method="get">
+			<input type="text" name="q" placeholder="[Space] to search" id="search" autocomplete="off">
+		</form>
+
+		<div id="liveClock"></div>
+
+	</footer>
 </body>
+<script type="text/javascript" src="keys.js"></script>
 </html>
